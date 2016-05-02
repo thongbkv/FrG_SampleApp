@@ -1,0 +1,3 @@
+$("#comments_<%=@entry.id%>").prepend("<%= escape_javascript(render partial: 'comments/comment', locals: {comment: @comment}) %>");
+$("#entries-<%=@entry.id%>").find(".comment_content").val('');
+$("#entries-<%=@entry.id%>").find(".submit").val('Send');
